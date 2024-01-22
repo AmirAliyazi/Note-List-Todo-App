@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #cccccc;
+}
+
+h1{
+  margin-bottom: 2rem;
+}
+
+.todo-info{
+  margin-bottom: 4rem;
+} 
+
+.todo-info input{
+  width: 60%;
+  margin-right: 1rem;
+  border: none;
+  padding: 1rem;
+  background-color: #bcf0c7;
+  border-radius: 1rem;
+  color: #000;
+  font-size: 16px;
+}
+
+.todo-info input::placeholder{
+  color: #acacac;
+}
+
+.todo-info input:focus{
+  outline: 1px ridge #3f3d3d;
+}
+
+.todo-info button{
+  padding: 1rem;
+  background-color: rgb(68, 151, 89);
+  border: none;
+  border-radius: 1rem;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.todo-list ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.todo-list ul li{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #6dee89;
+  border-radius: 1rem;
+  color: #000;
+  font-size: 16px;
+}
+
+.btn{
+  display: flex;
+  gap: 0.1rem;
+}
+
+.btn button{
+  padding: 0.5rem;
+  border: none;
+  background-color: inherit;
+}
+
+.trash-icon{
+  width: 1.5rem;
+  cursor: pointer;
+  color: red;
+}
+
+.check-icon{
+  width: 1.5rem;
+  cursor: pointer;
+  color: blue;
+}
+
+.todo.completed{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
